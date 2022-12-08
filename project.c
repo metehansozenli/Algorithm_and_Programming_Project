@@ -120,39 +120,39 @@ void harf_notu_hesapla(double ortalama,double T_skoru[],char harf_notu[][3],int 
             (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>70.0 && ortalama<=80.0)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=69.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=64.0 && T_skoru[i]<=68.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=59.0 && T_skoru[i]<=63.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=54.0 && T_skoru[i]<=58.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=49.0 && T_skoru[i]<=53.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=44.0 && T_skoru[i]<=48.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=39.0 && T_skoru[i]<=43.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=34.0 && T_skoru[i]<=38.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>62.5 && ortalama<=70.0)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=71.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=66.0 && T_skoru[i]<=70.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=61.0 && T_skoru[i]<=65.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=56.0 && T_skoru[i]<=60.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=51.0 && T_skoru[i]<=55.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=46.0 && T_skoru[i]<=50.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=41.0 && T_skoru[i]<=45.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=36.0 && T_skoru[i]<=40.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>57.5 && ortalama<=62.5)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=73.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=68.0 && T_skoru[i]<=72.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=63.0 && T_skoru[i]<=67.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=58.0 && T_skoru[i]<=62.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=53.0 && T_skoru[i]<=57.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=48.0 && T_skoru[i]<=52.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=43.0 && T_skoru[i]<=47.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=38.0 && T_skoru[i]<=42.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>52.5 && ortalama<=57.5)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=75.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=70.0 && T_skoru[i]<=74.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=65.0 && T_skoru[i]<=69.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=60.0 && T_skoru[i]<=64.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=55.0 && T_skoru[i]<=59.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=50.0 && T_skoru[i]<=54.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=45.0 && T_skoru[i]<=49.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=40.0 && T_skoru[i]<=44.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>47.5 && ortalama<=52.5)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=77.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=72.0 && T_skoru[i]<=76.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=67.0 && T_skoru[i]<=71.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else if(ortalama>42.5 && ortalama<=47.5)
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=79.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=74.0 && T_skoru[i]<=78.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=69.0 && T_skoru[i]<=73.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=64.0 && T_skoru[i]<=68.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=59.0 && T_skoru[i]<=63.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=54.0 && T_skoru[i]<=58.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=49.0 && T_skoru[i]<=53.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=44.0 && T_skoru[i]<=48.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
 
         else
-            (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
-            (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
-            (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+            (T_skoru[i]>=81.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=76.0 && T_skoru[i]<=80.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=71.0 && T_skoru[i]<=75.99)? strcpy(harf_notu[i],"BB"):
+            (T_skoru[i]>=66.0 && T_skoru[i]<=70.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=61.0 && T_skoru[i]<=65.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=56.0 && T_skoru[i]<=60.99)? strcpy(harf_notu[i],"DC"):
+            (T_skoru[i]>=51.0 && T_skoru[i]<=55.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=46.0 && T_skoru[i]<=50.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
     harf_notu[i][2]='\0';
     }
 }
