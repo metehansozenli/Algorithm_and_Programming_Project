@@ -31,26 +31,22 @@ void sinavi_uygula(char ogrenci_cevaplari[][100], char cevap_anahtari[], int N, 
 
     for(int i=0;i<N;i++){
             for(int j=0;j<S;j++){
-
-                bos_olasilik=rand()%101;
-                if(bos_olasilik<=B*100)//
+                bos_olasilik=rand()%101+1;//1-100 kapali araliginda random sayi olusturuluyor
+                if(bos_olasilik<=B*100)//cevabin olasilik dahilinde bos birakilma durumu
                     ogrenci_cevaplari[i][j]='X';
-
-                else{//soruyu bos birakmazsa
-                    dogru_olasilik=rand()%101;//0 ile 100 arasinda sayi uretir (100 dahil)
-
+                else{//sorunun bos birakilma ihtimali gerceklesmezse
+                    dogru_olasilik=rand()%101+1;//1-100 kapali araliginda random sayi olusturuluyor
                     if(dogru_olasilik<=D*100)//cevabin olasilik dahilinde dogru olma durumu
                         ogrenci_cevaplari[i][j]=cevap_anahtari[j];
-
                     else{//cevabin yanlis olma durumu
-                        while(1){//random olusturulan cevabin dogru cevap olmamasini saglayan sonsuz dongu
-                            c=(char)(rand()%5+65);
+                        while(1){//burda amac sonsuz dongu ile dogru cevaptan baska bir random cevap olusturmak
+                            c=rand()%5+65;//random cevap olusturuluyor
                             if(c != cevap_anahtari[j]){//eger olusan random cevap, dogru cevapla ayni degilse
                                 rand_cevap=c;
-                                break;
+                                break;//kosul gerceklesince sonsuz dongunun sonlanmasi icin
                             }
                         }
-                        ogrenci_cevaplari[i][j]=rand_cevap;//rastgele cevap ataniyor
+                        ogrenci_cevaplari[i][j]=rand_cevap;
                     }
                 }
             }
@@ -67,14 +63,14 @@ void ogrenci_cevabini_yazdir(char ogrenci_cevaplari[][100], int ogrenci_ID, int 
 ///////////////////////////////////////MODUL 2//////////////////////////////////////////////////////////////////
 void ogrencileri_puanla(char ogrenci_cevaplari[][100], char cevap_anahtari[], double HBN[],int N, int S){
 
-    int dogru_sayisi,yanlis_sayisi;
-    double soru_puani=100/S;
+    int dogru_sayisi,yanlis_sayisi;//HBN hesaplanmasi icin kullanilacak dogru ve yanlis cevap sayilarini tutan degiskenler
+    double soru_puani=100/S;//sinavdaki her bir sorunun puan degeri
     for(int i=0;i<N;i++){
-        dogru_sayisi=0,yanlis_sayisi=0;
+        dogru_sayisi=0,yanlis_sayisi=0;//her ogrenci icin dogru yanlis sayilari sifirlanmali
         for(int j=0;j<S;j++){
-            if(ogrenci_cevaplari[i][j]==cevap_anahtari[j])
+            if(ogrenci_cevaplari[i][j]==cevap_anahtari[j])//ogrencinin cevabi cevap anahtari ile uyusuyorsa
                 dogru_sayisi++;
-            else if(ogrenci_cevaplari[i][j]!=cevap_anahtari[j] && ogrenci_cevaplari[i][j]!='X')
+            else if(ogrenci_cevaplari[i][j]!=cevap_anahtari[j] && ogrenci_cevaplari[i][j]!='X')//ogrencinin cevabi dogru degilse ve bos degilse
                 yanlis_sayisi++;
         }
         HBN[i]=(dogru_sayisi*soru_puani)-(yanlis_sayisi*soru_puani/4.0);//HBN hesaplanmasi
@@ -106,7 +102,7 @@ void T_skoru_hesapla(double ortalama, double HBN[], int N, double std, double T_
 
 void sinif_duzeyi_belirle(double ortalama){
 
-    printf("Sinif Duzeyi: ");//Ternary ifadelerle sinif duzeyi belirleme
+    printf("Sinif Duzeyi: ");//Ternary ifadelerle sinif duzeyi belirleyip yazdirma
     (ortalama>80.0 && ortalama<=100.0)? printf("Ustun Basari\n"):(ortalama>70.0 && ortalama<=80.0)? printf("Mukemmel\n"):(ortalama>62.5 && ortalama<=70.0)? printf("Cok Iyi\n"):
     (ortalama>57.5 && ortalama<=62.5)? printf("Iyi\n"):(ortalama>52.5 && ortalama<=57.5)? printf("Ortanin Ustu\n"):(ortalama>47.5 && ortalama<=52.5)? printf("Orta\n"):
     (ortalama>42.5 && ortalama<=47.5)? printf("Zayif\n"):printf("Kotu\n");
@@ -115,7 +111,7 @@ void sinif_duzeyi_belirle(double ortalama){
 void harf_notu_hesapla(double ortalama,double T_skoru[],char harf_notu[][3],int N){
 
     for(int i=0;i<N;i++){
-        if(ortalama>80.0 && ortalama<=100.0)//Ternary ifadelerle harf notu hesaplama
+        if(ortalama>80.0 && ortalama<=100.0)//Ternary ifadelerle sinif ortalamasina ve t skora gore harf notu hesaplama
             (T_skoru[i]>=67.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=62.0 && T_skoru[i]<=66.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=57.0 && T_skoru[i]<=61.99)? strcpy(harf_notu[i],"BB"):
             (T_skoru[i]>=52.0 && T_skoru[i]<=56.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=47.0 && T_skoru[i]<=51.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=42.0 && T_skoru[i]<=46.99)? strcpy(harf_notu[i],"DC"):
             (T_skoru[i]>=37.0 && T_skoru[i]<=41.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=32.0 && T_skoru[i]<=36.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
@@ -154,6 +150,7 @@ void harf_notu_hesapla(double ortalama,double T_skoru[],char harf_notu[][3],int 
             (T_skoru[i]>=81.0)? strcpy(harf_notu[i],"AA"):(T_skoru[i]>=76.0 && T_skoru[i]<=80.99)? strcpy(harf_notu[i],"BA"):(T_skoru[i]>=71.0 && T_skoru[i]<=75.99)? strcpy(harf_notu[i],"BB"):
             (T_skoru[i]>=66.0 && T_skoru[i]<=70.99)? strcpy(harf_notu[i],"CB"):(T_skoru[i]>=61.0 && T_skoru[i]<=65.99)? strcpy(harf_notu[i],"CC"):(T_skoru[i]>=56.0 && T_skoru[i]<=60.99)? strcpy(harf_notu[i],"DC"):
             (T_skoru[i]>=51.0 && T_skoru[i]<=55.99)? strcpy(harf_notu[i],"DD"):(T_skoru[i]>=46.0 && T_skoru[i]<=50.99)? strcpy(harf_notu[i],"FD"):strcpy(harf_notu[i],"FF");
+
     harf_notu[i][2]='\0';
     }
 }
