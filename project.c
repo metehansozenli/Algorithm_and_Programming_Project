@@ -64,7 +64,7 @@ void ogrenci_cevabini_yazdir(char ogrenci_cevaplari[][100], int ogrenci_ID, int 
 void ogrencileri_puanla(char ogrenci_cevaplari[][100], char cevap_anahtari[], double HBN[],int N, int S){
 
     int dogru_sayisi,yanlis_sayisi;//HBN hesaplanmasi icin kullanilacak dogru ve yanlis cevap sayilarini tutan degiskenler
-    double soru_puani=100/S;//sinavdaki her bir sorunun puan degeri
+    double soru_puani=100.0/S;//sinavdaki her bir sorunun puan degeri
     for(int i=0;i<N;i++){
         dogru_sayisi=0,yanlis_sayisi=0;//her ogrenci icin dogru yanlis sayilari sifirlanmali
         for(int j=0;j<S;j++){
