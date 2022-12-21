@@ -90,7 +90,6 @@ double standart_sapma_hesapla(double ortalama, double HBN[], int N){
     double sonuc=0.0;
     for(int i=0;i<N;i++)
         sonuc+=pow(HBN[i]-ortalama,2);
-
     return sqrt(sonuc/N);
 }
 
@@ -155,8 +154,8 @@ void harf_notu_hesapla(double ortalama,double T_skoru[],char harf_notu[][3],int 
     }
 }
 
-int main()
-{
+int main(){
+    
     int N,S;
     double B,D,ortalama,std,HBN[MAX],T_skoru[MAX];
     char cevap_anahtari[MAX],ogrenci_cevaplari[MAX][MAX],harf_notu[MAX][3];
